@@ -12,14 +12,6 @@ const Hero = () => {
       <div className="hero-text">
         <h1>Smart Queue Management System</h1>
         <p>Manage queues, reduce waiting time and improve customer experience.</p>
-        <div className="rating">
-          <FaStar color="#22C55E" />
-          <FaStar color="#22C55E" />
-          <FaStar color="#22C55E" />
-          <FaStar color="#22C55E" />
-          <FaRegStar color="#22C55E" />
-          <span> Trusted by 500+ businesses</span>
-        </div>
       </div>
 
       {/* CONTENT AREA */}

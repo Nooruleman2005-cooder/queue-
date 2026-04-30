@@ -29,14 +29,14 @@ body {
 .logo {
   font-size: 22px;
   font-weight: 700;
-  color: #22C55E;
+  color:  rgb(136, 11, 11);
 }
 
 /* SEARCH */
 .search-bar {
   display: flex;
   align-items: center;
-  border: 1px solid #22C55E;
+  border: 1px solid  rgb(136, 11, 11);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -49,7 +49,7 @@ body {
 }
 
 .search-bar button {
-  background: #22C55E;
+  background:  rgb(136, 11, 11);
   border: none;
   padding: 8px 12px;
   cursor: pointer;
@@ -70,8 +70,8 @@ body {
 
 /* NAVBAR */
 nav.navbar {
-  background-color: #22C55E !important;
-  border: 2px solid #22C55E;
+  background-color: rgb(136, 11, 11) !important;
+  border: 2px solid  rgb(136, 11, 11);
   border-radius: 10px;
   margin: 10px;
 }
@@ -80,7 +80,7 @@ nav.navbar {
   backdrop-filter: blur(10px);
   padding: 15px 40px;
   transition: all 0.3s ease;
-  border: 2px solid #22C55E;
+  border: 2px solid  rgb(136, 11, 11);
   border-radius: 10px;
   margin: 10px 10px;
 }
@@ -119,16 +119,16 @@ nav.navbar {
 /* NAVBAR BASE */
 .custom-nav {
   background: white !important;
-  border-bottom: 2px solid #22C55E;
+  border-bottom: 2px solid rgb(136, 11, 11);
 }
 
 /* TOGGLER ICON FIX */
 .navbar-toggler {
-  border: 2px solid #22C55E;
+  border: 2px solid  rgb(136, 11, 11);
 }
 
 .navbar-toggler:hover {
-  background-color: #22C55E;
+  background-color:  rgb(136, 11, 11);
 }
 
 .navbar-toggler:focus {
@@ -148,7 +148,7 @@ nav.navbar {
 
 /* BRAND */
 .brand {
-  color: #22C55E !important;
+  color:  rgb(136, 11, 11) !important;
   font-weight: 700;
   font-size: 20px;
 }
@@ -184,7 +184,7 @@ nav.navbar {
 
 /* PRIMARY BUTTON */
 .primary {
-  background: #22C55E;
+  background:  rgb(136, 11, 11);
   color: white;
 }
 
@@ -204,12 +204,12 @@ nav.navbar {
 
 /* FOOTER */
 .footer {
-  background: #22C55E;
+  background:  rgb(136, 11, 11);
   color: white;
   padding: 60px 20px 20px;
   margin-top: 60px;
   border-top: 1px solid #E5E7EB;
-  border: 2px solid #22C55E;
+  border: 2px solid rgb(136, 11, 11);
   border-radius: 10px;
   margin: 10px 10px;
 }
@@ -392,7 +392,7 @@ html {
 .hero-text h1 {
   font-size: 42px;
   font-weight: 700;
-  color: #22C55E;
+  color:rgb(136, 11, 11);
 }
 
 .hero-text p {
@@ -421,16 +421,7 @@ html {
 .hero-box {
   flex: 1;
   min-width: 300px;
-  background: #fff;
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   transition: 0.3s;
-}
-
-.hero-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.2);
 }
 
 /* IMAGE */
@@ -442,8 +433,11 @@ html {
 }
 
 /* VIDEO */
-.video-box iframe {
+.video-box video{
   border-radius: 10px;
+   width: 100%;
+  height: 320px;
+  object-fit: cover;
 }
 
 /*  MOBILE */
@@ -464,7 +458,7 @@ html {
   gap: 5px;
   margin-top: 10px;
   font-size: 18px;
-  color: #22C55E;
+  color:  rgb(136, 11, 11);
 }
 
 .about-section {
@@ -501,16 +495,16 @@ html {
 }
 
 .about-card {
-  background: #22C55E;
+  background:  rgb(136, 11, 11);
   padding: 20px;
   border-radius: 12px;
-  border: 1px solid #22C55E;
+  border: 1px solid  rgb(136, 11, 11);
   transition: 0.3s;
 }
 
 .about-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.15);
+  box-shadow: 0 10px 25px rgba(241, 109, 109, 0.712);
 }
 
 .about-card h3 {
@@ -563,20 +557,20 @@ html {
   padding: 20px;
   border-radius: 12px;
   width: 250px;
-  border: 1px solid #22C55E;
+  border: 1px solid  rgb(136, 11, 11);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   transition: 0.3s;
 }
 
 .contact-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.2);
+  box-shadow: 0 10px 25px rgba(241, 109, 109, 0.712);
 }
 
 /* LINKS */
 .contact-item a {
   text-decoration: none;
-  color: #22C55E;
+  color: rgb(136, 11, 11);
   font-weight: 600;
 }
 
@@ -592,7 +586,7 @@ html {
 /* ICON */
 .icon {
   font-size: 28px;
-  color: #22C55E;
+  color: rgb(136, 11, 11);
   margin-bottom: 10px;
 }
 
@@ -619,9 +613,9 @@ html {
 /* SIDEBAR */
 .sidebar {
   width: 300px;
-  background: #22C55E;
+  background:  rgb(136, 11, 11);
   color: white;
-  border: 1px solid #22C55E;
+  border: 1px solid rgb(136, 11, 11);
   padding: 20px;
   border-radius: 10px;
 }
@@ -631,9 +625,9 @@ html {
   margin: 8px 0;
   padding: 10px;
   border: none;
-  color: #22C55E;
+  color: rgb(136, 11, 11);
   background: white;
-  border: 1px solid #22C55E;
+  border: 1px solid  rgb(136, 11, 11);
   border-radius: 6px;
   cursor: pointer;
   transform: translateY(-5px);
@@ -641,7 +635,7 @@ html {
 }
 
 .sidebar button:hover {
-  background-color: #22C55E;
+  background-color:  rgb(136, 11, 11);
   color: white;
   border: 1px solid white;
 }
@@ -659,7 +653,7 @@ html {
   background: white;
   border-radius: 12px;
   padding: 15px;
-  border: 1px solid #22C55E;
+  border: 1px solid rgb(136, 11, 11);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -668,7 +662,7 @@ html {
 
 .product-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.2);
+  box-shadow: 0 10px 25px rgba(241, 109, 109, 0.329);
 }
 
 .product-card img {
@@ -691,9 +685,9 @@ html {
 .product-btn {
   padding: 10px;
   border: none;
-  background: #22C55E;
-  color: black;
-  font-weight: 600;
+  background:  rgb(136, 11, 11);
+  color: white;
+  font-weight: 400;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -701,8 +695,8 @@ html {
 
 .product-btn:hover {
   background-color: white;
-  color: #22C55E;
-  border: 1px solid #22C55E;
+  color:  rgb(136, 11, 11);
+  border: 1px solid rgb(136, 11, 11);
 }
 
 /* 🔥 RESPONSIVE */
