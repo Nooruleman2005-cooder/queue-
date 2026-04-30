@@ -58,7 +58,7 @@ const Hero = () => {
             muted
             playsInline
           >
-            <source src="/305657.mp4" type="video/mp4" />
+            <source src="/QCS _ Queue Management System App - Tutorial.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
