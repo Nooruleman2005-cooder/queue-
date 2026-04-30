@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const Products = () => {
   const [category, setCategory] = useState("all");
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   const products = [
     {
@@ -67,11 +68,34 @@ const Products = () => {
             <p>High quality queue solution for modern businesses.</p>
 
             {/* BUTTON */}
-            <button className="product-btn">View Details</button>
+            <button
+              className="product-btn"
+              onClick={() => setSelectedProduct(p)} >
+              View Details
+            </button>
 
           </div>
         ))}
       </div>
+
+      {selectedProduct && (
+        <div className="modal-overlay" onClick={() => setSelectedProduct(null)}>
+
+          <div className="modal-box" onClick={(e) => e.stopPropagation()}>
+
+            <img src={selectedProduct.img} alt={selectedProduct.name} />
+
+            <h2>{selectedProduct.name}</h2>
+            <p>
+              This is a detailed description of {selectedProduct.name}.
+              It provides smart queue management solutions for businesses.
+            </p>
+
+            <button onClick={() => setSelectedProduct(null)}>Close</button>
+
+          </div>
+        </div>
+      )}
 
     </section>
   );
