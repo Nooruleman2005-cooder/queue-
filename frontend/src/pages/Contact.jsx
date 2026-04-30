@@ -30,7 +30,13 @@ const Contact = () => {
         <div className="contact-item">
           <FaMapMarkerAlt className="icon" />
           <h4>Location</h4>
-          <p>Karachi, Pakistan</p>
+          <a
+            href="https://www.google.com/maps?q=322-A,+3rd+Floor,+Bhayani+Shopping+Centre,+Block+M,+North+Nazimabad,+Karachi,+Pakistan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Karachi, Pakistan
+          </a>
         </div>
 
       </div>
