@@ -26,10 +26,9 @@ body {
 }
 
 /* LOGO */
-.logo {
-  font-size: 22px;
-  font-weight: 700;
-  color: rgb(136, 11, 11);
+.logo img {
+  max-height: 80px;
+  width: auto;
 }
 
 /* SEARCH */

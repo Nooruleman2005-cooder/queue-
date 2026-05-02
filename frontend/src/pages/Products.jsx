@@ -1,53 +1,20 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Products = () => {
+const Products = ({ data }) => {
   const [category, setCategory] = useState("all");
-  const [selectedProduct, setSelectedProduct] = useState(null);
   const navigate = useNavigate();
 
-  const products = [
-    {
-      id: 1,
-      name: "Basic Queue System",
-      type: "basic",
-      img: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=500"
-    },
-    {
-      id: 2,
-      name: "Mid Range Queue System",
-      type: "mid",
-      img: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=500"
-    },
-    {
-      id: 3,
-      name: "Premium Queue System",
-      type: "premium",
-      img: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=500"
-    },
-    {
-      id: 4,
-      name: "Smart Buzzer System",
-      type: "basic",
-      img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500"
-    },
-    {
-      id: 5,
-      name: "Analytics Dashboard",
-      type: "premium",
-      img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500"
-    },
-  ];
 
   const filtered =
     category === "all"
-      ? products
-      : products.filter((p) => p.type === category);
+      ? data
+      : data.filter((p) => p.type === category);
 
   return (
     <section className="products-page">
 
-      {/* SIDEBAR */}
+      {/* SIDEBAR FILTER */}
       <div className="sidebar">
         <h2>Products</h2>
 
@@ -59,27 +26,35 @@ const Products = () => {
 
       {/* PRODUCTS GRID */}
       <div className="product-grid">
-        {filtered.map((p) => (
-          <div className="product-card" key={p.id}>
 
-            {/* IMAGE */}
-            <img src={p.img} alt={p.name} />
+        {filtered.length > 0 ? (
+          filtered.map((p) => (
+            <div className="product-card" key={p.id}>
 
-            {/* CONTENT */}
-            <h4>{p.name}</h4>
-            <p>High quality queue solution for modern businesses.</p>
+              {/* IMAGE */}
+              <img src={p.img} alt={p.name} />
 
-            {/* BUTTON */}
-            <button
-              className="product-btn"
-              onClick={() => navigate(`/product/${p.id}`)} >
-              View Details
-            </button>
+              {/* NAME */}
+              <h4>{p.name}</h4>
 
-          </div>
-        ))}
+              {/* DESCRIPTION */}
+              <p>High quality queue solution for modern businesses.</p>
+
+              {/* BUTTON */}
+              <button
+                className="product-btn"
+                onClick={() => navigate(`/product/${p.id}`)}
+              >
+                View Details
+              </button>
+
+            </div>
+          ))
+        ) : (
+          <h3 style={{ textAlign: "center" }}>No Product Found 😢</h3>
+        )}
+
       </div>
-
     </section>
   );
 };

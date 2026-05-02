@@ -33,10 +33,9 @@ const productsData = [
     },
 ];
 
-const SearchFilter = () => {
-  const [search, setSearch] = useState("");
+const SearchFilter = ({ search, setSearch, data }) => {
 
-  const filteredProducts = productsData.filter((item) =>
+  const filteredProducts = data.filter((item) =>
     item.name.toLowerCase().includes(search.toLowerCase())
   );
 
@@ -57,5 +56,4 @@ const SearchFilter = () => {
     </>
   );
 };
-
 export default SearchFilter;
