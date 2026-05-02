@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Products = () => {
   const [category, setCategory] = useState("all");
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const navigate = useNavigate();
 
   const products = [
     {
@@ -70,32 +72,13 @@ const Products = () => {
             {/* BUTTON */}
             <button
               className="product-btn"
-              onClick={() => setSelectedProduct(p)} >
+              onClick={() => navigate(`/product/${p.id}`)} >
               View Details
             </button>
 
           </div>
         ))}
       </div>
-
-      {selectedProduct && (
-        <div className="modal-overlay" onClick={() => setSelectedProduct(null)}>
-
-          <div className="modal-box" onClick={(e) => e.stopPropagation()}>
-
-            <img src={selectedProduct.img} alt={selectedProduct.name} />
-
-            <h2>{selectedProduct.name}</h2>
-            <p>
-              This is a detailed description of {selectedProduct.name}.
-              It provides smart queue management solutions for businesses.
-            </p>
-
-            <button onClick={() => setSelectedProduct(null)}>Close</button>
-
-          </div>
-        </div>
-      )}
 
     </section>
   );

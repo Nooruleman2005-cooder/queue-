@@ -14,7 +14,7 @@ const Contact = () => {
         <div className="contact-item">
           <FaPhone className="icon" />
           <h4>Phone</h4>
-          <a href="tel:+923001234567">+92 300 1234567</a>
+          <a href="tel:+923001234567">+92 333 3298758</a>
         </div>
 
         {/* EMAIL */}
@@ -31,7 +31,7 @@ const Contact = () => {
           <FaMapMarkerAlt className="icon" />
           <h4>Location</h4>
           <a
-            href="https://www.google.com/maps?q=322-A,+3rd+Floor,+Bhayani+Shopping+Centre,+Block+M,+North+Nazimabad,+Karachi,+Pakistan"
+            href= "https://www.google.com/maps/search/Inzey+Technologies/@24.9481945,67.0510087,17z?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
           >
