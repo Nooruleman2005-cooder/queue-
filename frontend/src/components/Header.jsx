@@ -2,7 +2,7 @@ import React from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
 
-const Header = ({ search, setSearch, productsRef }) => {
+const Header = () => {
 
   const navigate = useNavigate();
 
@@ -13,18 +13,7 @@ const Header = ({ search, setSearch, productsRef }) => {
     }, 100);
   };
 
-  const scrollToProducts = () => {
-    productsRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const handleSearchChange = (value) => {
-    setSearch(value);
-  };
-
-  const handleSearchClick = () => {
-    scrollToProducts();
-    setSearch("");
-  };
+  const phoneNumber = "+923001234567"; 
 
   return (
     <>
@@ -34,20 +23,12 @@ const Header = ({ search, setSearch, productsRef }) => {
           <img src="/queue-logo.png" alt="Logo" />
         </div>
 
-        <div className="search-bar">
-
-          <input
-            type="text"
-            placeholder="Search products..."
-            value={search}
-            onChange={(e) => handleSearchChange(e.target.value)}
-          />
-
-          <button onClick={handleSearchClick}>
-            <FaSearch />
-          </button>
-
-        </div>
+        <a
+          href={`tel:${phoneNumber}`}
+          className="btn contact-btn"
+        >
+          Contact Now
+        </a>
       </div>
 
       <nav className="navbar navbar-expand-lg custom-nav px-4 navbar-dark">

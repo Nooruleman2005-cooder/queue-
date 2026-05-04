@@ -2,6 +2,7 @@ import React from "react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Contact = () => {
+  
   return (
     <section className="contact-section" id="contact">
 

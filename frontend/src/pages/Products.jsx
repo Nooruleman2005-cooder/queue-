@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Products = ({ data }) => {
+const Products = () => {
+
   const [category, setCategory] = useState("all");
   const navigate = useNavigate();
 
+  const data = [
+    { id: 1, name: "Basic Queue System", type: "basic", img: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=500" },
+    { id: 2, name: "Mid Range Queue System", type: "mid", img: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=500" },
+    { id: 3, name: "Premium Queue System", type: "premium", img: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=500" },
+  ];
 
   const filtered =
     category === "all"
@@ -14,7 +20,6 @@ const Products = ({ data }) => {
   return (
     <section className="products-page">
 
-      {/* SIDEBAR FILTER */}
       <div className="sidebar">
         <h2>Products</h2>
 
@@ -24,23 +29,16 @@ const Products = ({ data }) => {
         <button onClick={() => setCategory("premium")}>Premium</button>
       </div>
 
-      {/* PRODUCTS GRID */}
       <div className="product-grid">
 
         {filtered.length > 0 ? (
           filtered.map((p) => (
             <div className="product-card" key={p.id}>
 
-              {/* IMAGE */}
               <img src={p.img} alt={p.name} />
-
-              {/* NAME */}
               <h4>{p.name}</h4>
-
-              {/* DESCRIPTION */}
               <p>High quality queue solution for modern businesses.</p>
 
-              {/* BUTTON */}
               <button
                 className="product-btn"
                 onClick={() => navigate(`/product/${p.id}`)}
@@ -51,7 +49,7 @@ const Products = ({ data }) => {
             </div>
           ))
         ) : (
-          <h3 style={{ textAlign: "center" }}>No Product Found 😢</h3>
+          <h3>No Product Found 😢</h3>
         )}
 
       </div>
