@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
+import { FaPhoneAlt } from 'react-icons/fa';
 
 const Header = () => {
 
@@ -23,12 +24,9 @@ const Header = () => {
           <img src="/queue-logo.png" alt="Logo" />
         </div>
 
-        <a
-          href={`tel:${phoneNumber}`}
-          className="btn contact-btn"
-        >
-          Contact Now
-        </a>
+      <a href={`tel:${phoneNumber}`} className="call-link">
+  <FaPhoneAlt /> +92 300 1234567
+</a>
       </div>
 
       <nav className="navbar navbar-expand-lg custom-nav px-4 navbar-dark">

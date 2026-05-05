@@ -18,8 +18,14 @@ const Products = () => {
       : data.filter((p) => p.type === category);
 
   return (
-    <section className="products-page">
-
+    <section className=" section products-page">
+      <div className="products-header">
+        <h1>Our Products</h1>
+        <p>
+          Explore our smart queue management solutions designed for every type of business.
+        </p>
+      </div>
+ <div className="products-layout">
       <div className="sidebar">
         <h2>Products</h2>
 
@@ -52,6 +58,7 @@ const Products = () => {
           <h3>No Product Found 😢</h3>
         )}
 
+      </div>
       </div>
     </section>
   );

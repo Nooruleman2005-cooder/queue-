@@ -4,7 +4,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 const Contact = () => {
   
   return (
-    <section className="contact-section" id="contact">
+    <section className="section contact-section" id="contact">
 
       <h2>Contact Us</h2>
       <p>We are here to help you. Reach us anytime.</p>

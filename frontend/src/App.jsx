@@ -7,6 +7,8 @@ import Contact from './pages/Contact';
 import Products from './pages/Products';
 import ProductDetails from './pages/ProductDetails';
 import './App.css';
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
 
         {/* PRODUCT DETAILS */}
         <Route path="/product/:id" element={<ProductDetails />} />
+         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+         <Route path="/terms" element={<TermsConditions/>} />
 
       </Routes>
 

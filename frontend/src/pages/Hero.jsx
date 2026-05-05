@@ -6,7 +6,7 @@ import 'swiper/css';
 
 const Hero = () => {
   return (
-    <section className="hero-section">
+    <section className="section hero-section">
 
       {/* TEXT AREA */}
       <div className="hero-text">

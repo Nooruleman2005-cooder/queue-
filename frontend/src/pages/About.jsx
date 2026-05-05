@@ -3,10 +3,10 @@ import { FaBolt, FaChartLine, FaSmile } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className="about-section" id="about">
+    <section className="section about-section" id="about">
       <div className="about-container">
 
-        <h2>About QueueCounter</h2>
+        <h2>About Us</h2>
 
         <p className='p-txt'>
           QueueCounter is a smart queue management system designed to help
