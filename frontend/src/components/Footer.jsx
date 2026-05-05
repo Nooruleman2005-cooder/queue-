@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { FaEnvelope, FaPhone, FaWhatsapp, FaArrowUp } from "react-icons/fa";
 
@@ -71,8 +72,8 @@ const Footer = () => {
 
           <div className="footer-box">
             <h4>Support</h4>
-            <a href="/privacypolicy">Privacy Policy</a>
-            <a href="/terms">Terms of Service</a>
+            <Link to="/privacypolicy">Privacy Policy</Link>
+            <Link to="/terms">Terms of Service</Link>
           </div>
 
         </div>
