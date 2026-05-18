@@ -36,13 +36,13 @@ const Footer = () => {
             </a>
 
             {/* CALL */}
-            <a href="tel:+923001234567" className="footer-link">
+            <a href="tel:+923333298578" className="footer-link">
               <FaPhone />
             </a>
 
             {/* WHATSAPP */}
             <a
-              href="https://wa.me/923001234567?text=Hello%20I%20want%20to%20know%20about%20your%20products"
+              href="https://wa.me/+923333298578?text=Hello%20I%20want%20to%20know%20about%20your%20products"
               target="_blank"
               rel="noreferrer"
               className="footer-link"

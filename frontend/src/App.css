@@ -772,8 +772,7 @@ html {
 .products-header p {
    color: #222;
   font-size: 19px;
-  max-width: 900px;
-  /* 🔥 more breathing space */
+  text-align: center !important;
   line-height: 1.8;
 }
 
@@ -862,7 +861,7 @@ html {
 .product-card p {
   font-size: 13px;
   color: #6B7280;
-}
+} 
 
 /* BUTTON */
 .product-btn {
